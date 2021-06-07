@@ -1,0 +1,21 @@
+Algoritmo pseudo5
+	Definir personas, edad, eleccion, mayoredad, menoredad Como Entero
+	Escribir "Ingrese la cantidad de participantes"
+	Leer personas
+	Para x<-1 Hasta personas Con Paso 1 Hacer
+		Escribir "Ingrese la edad del participante"
+		Leer edad
+		Escribir "Ingrese sexo, 1.Hombre 2.Mujer"
+		Leer eleccion
+		Si eleccion == 1 Entonces
+			Si edad < 18 Entonces
+				menoredad = menoredad + 1
+			Fin Si
+		SiNo
+			Si edad >= 18 Entonces
+				mayoredad = mayoredad + 1
+			FinSi
+		Fin Si
+	Fin Para
+	Escribir "Hay ",mayoredad, " mujeres mayores de edad y hay ",menoredad," hombres menores de edad"
+FinAlgoritmo
